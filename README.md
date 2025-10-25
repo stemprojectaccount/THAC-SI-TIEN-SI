@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -547,16 +546,22 @@
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
                         <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Nguyễn Văn A" class="student-image">
-                        <h3>ThS. NGUYỄN VĂN A</h3>
-                        <div class="achievement-badge">Thạc sĩ Quản lý Giáo dục</div>
+                        <h3>Nguyễn Hoàng Châu</h3>
+                        <h3>niên khoá 2007-2011</h3>
+                        <div class="achievement-badge">HCB cuộc thi Olympic Tiếng Anh trên Internet cấp QG, Giải Ba cuộc thi HSG cấp tỉnh môn Tiếng Anh 
+                        2016-2020: làm việc tại Hãng hàng không Vietjet; tiếp viên Hàng không năm 
+                        2020-2021: hoàn thành Commercial Pilot License tại trường Air Venture, Olive Branch, Mississippi, USA năm 2023; hoàn thành khoá học chuyển loại tàu bay Airbus A320 Type Rating tại Vietjet Aviation Academy; từ 2023 đến nay: làm phi công của Vietjet, chức vụ: Cơ phó. </div>
                     </div>
                     
                     <!-- Thạc sĩ 2 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
                         <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Trần Thị B" class="student-image">
-                        <h3>ThS. TRẦN THỊ B</h3>
-                        <div class="achievement-badge">Thạc sĩ Ngôn ngữ học</div>
+                        <h3>Nguyễn Ngọc Sơn</h3>
+                        <h3>niên khoá 2011-2015</h3>
+                        <div class="achievement-badge"> Học sinh giỏi môn Toán cấp Tỉnh, cấp Quốc gia
+                        Tốt nghiệp Học Viện Biên phòng thành phố Kaliningrad - Liên Bang Nga và được Bộ Quốc phòng tặng Bằng Khen. Hiện nay mang quân Hàm Thượng úy
+                        đang công tác tại  Đoàn 871 trực thuộc Tổng cục chính trị Quân đội nhân dân Việt Nam và đã tốt nghiệp Xuất sắc chương trình Thạc sĩ</div>
                     </div>
                     
                     <!-- Thạc sĩ 3 -->
