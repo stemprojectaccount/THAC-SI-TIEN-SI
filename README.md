@@ -556,7 +556,7 @@
                     <!-- Thạc sĩ 2 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png](https://i.postimg.cc/SNchMd8F/z7155433116876-4bac09eab923bb4a934c6903f6c0d2c2.jpg" alt="Thạc sĩ Trần Thị B" class="student-image">
+                        <img src="https://i.postimg.cc/SNchMd8F/z7155433116876-4bac09eab923bb4a934c6903f6c0d2c2.jpg" alt="Thạc sĩ Trần Thị B" class="student-image">
                         <h3>Nguyễn Ngọc Sơn</h3>
                         <h3>niên khoá 2011-2015</h3>
                         <div class="achievement-badge"> Học sinh giỏi môn Toán cấp Tỉnh, cấp Quốc gia
