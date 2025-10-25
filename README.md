@@ -545,7 +545,7 @@
                     <!-- Thạc sĩ 1 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Nguyễn Văn A" class="student-image">
+                        <img src="https://i.postimg.cc/pXKHFCj7/z7155430514556-a28582aaea15b1af8f5ac6a324a0ce69.jpg" alt="Thạc sĩ Nguyễn Văn A" class="student-image">
                         <h3>Nguyễn Hoàng Châu</h3>
                         <h3>niên khoá 2007-2011</h3>
                         <div class="achievement-badge">HCB cuộc thi Olympic Tiếng Anh trên Internet cấp QG, Giải Ba cuộc thi HSG cấp tỉnh môn Tiếng Anh 
@@ -556,7 +556,7 @@
                     <!-- Thạc sĩ 2 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Trần Thị B" class="student-image">
+                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png](https://i.postimg.cc/SNchMd8F/z7155433116876-4bac09eab923bb4a934c6903f6c0d2c2.jpg" alt="Thạc sĩ Trần Thị B" class="student-image">
                         <h3>Nguyễn Ngọc Sơn</h3>
                         <h3>niên khoá 2011-2015</h3>
                         <div class="achievement-badge"> Học sinh giỏi môn Toán cấp Tỉnh, cấp Quốc gia
