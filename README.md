@@ -273,7 +273,7 @@
         }
         
         .subtitle {
-            font-size: 2.2rem;
+            font-size: 2rem;
             margin-bottom: 10px;
             position: relative;
             color: #e0e0ff;
@@ -536,10 +536,10 @@
             <!-- Students Section -->
             <div class="students-section">
                 <h2 class="section-title">
-                    <i class="fas fa-users"></i>DANH SÁCH THẠC SĨ XUẤT SẮC
+                    <i class="fas fa-users"></i>DANH SÁCH THẠC SĨ- TIẾN SĨ 
                 </h2>
                 
-                <h3 class="year-title">CÁC THẠC SĨ TỐT NGHIỆP XUẤT SẮC</h3>
+                <h3 class="year-title">CÁC THẠC SĨ - TIẾN SĨ</h3>
                 
                 <div class="students-grid" id="studentsGrid">
                     <!-- Thạc sĩ 1 -->
