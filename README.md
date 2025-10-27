@@ -525,7 +525,7 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <h1 class="glowing-text">BẢNG VINH DANH</h1>
-                <p class="subtitle"> thạc sĩ - tiến sĩ </p>
+                <p class="subtitle"> THẠC SĨ - TIẾN SĨ </p>
                 <p class="subtitle">TRƯỜNG THCS NGUYỄN KHUYẾN - XÃ EA KAR - TỈNH ĐẮK LẮK</p>
                 <div class="header-decoration"></div>
             </div>
