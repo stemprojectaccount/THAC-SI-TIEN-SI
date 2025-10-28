@@ -416,6 +416,175 @@
             font-weight: 500;
         }
         
+        /* ===== STUDENT CARDS STYLES ===== */
+        .students-section {
+            display: none;
+            width: 100%;
+            max-width: 1600px;
+            text-align: center;
+        }
+        
+        .year-title {
+            font-size: 3rem;
+            margin-bottom: 50px;
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .student-card {
+            background: linear-gradient(135deg, rgba(58, 109, 201, 0.9), rgba(42, 77, 155, 0.95));
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .student-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: translateX(-100%) skewX(-15deg);
+            transition: transform 0.8s;
+        }
+        
+        .student-card:hover::before {
+            transform: translateX(100%) skewX(-15deg);
+        }
+        
+        .student-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+        
+        .student-icon {
+            font-size: 3rem;
+            color: #FFD700;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+        }
+        
+        .student-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 215, 0, 0.6);
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        
+        .student-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #FFD700;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .achievement-badge {
+            background: linear-gradient(45deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
+            color: white;
+            padding: 12px 15px;
+            border-radius: 15px;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            line-height: 1.4;
+        }
+        
+        /* ===== BACK BUTTON STYLES ===== */
+        .back-section {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .back-button {
+            background: linear-gradient(135deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
+            border-radius: 25px;
+            width: 400px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            border: 3px solid rgba(255, 215, 0, 0.7);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 140, 66, 0.5);
+            cursor: pointer;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .back-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%) skewX(-15deg);
+            transition: transform 0.8s;
+        }
+        
+        .back-button:hover::before {
+            transform: translateX(100%) skewX(-15deg);
+        }
+        
+        .back-button:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(255, 140, 66, 0.7);
+        }
+        
+        .back-button .button-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+            transition: all 0.4s;
+        }
+        
+        .back-button:hover .button-icon {
+            transform: scale(1.2);
+        }
+        
+        .back-button .button-text {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        
         /* ===== MASTERS/PHD BUTTON STYLES ===== */
         .masters-phd-section {
             width: 100%;
@@ -575,6 +744,17 @@
                 font-size: 4rem;
             }
             
+            .students-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            
+            .back-button {
+                width: 300px;
+                height: 70px;
+                font-size: 1.5rem;
+            }
+            
             .masters-phd-button {
                 width: 90%;
                 height: 150px;
@@ -610,6 +790,26 @@
             
             .large-year .year-icon {
                 font-size: 3.5rem;
+            }
+            
+            .students-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .student-card {
+                min-height: 300px;
+                padding: 20px;
+            }
+            
+            .back-button {
+                width: 250px;
+                height: 60px;
+                font-size: 1.3rem;
+            }
+            
+            .back-button .button-icon {
+                font-size: 2rem;
             }
             
             .masters-phd-button {
