@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinh Danh Thạc Sĩ - Trường THCS Nguyễn Khuyến</title>
+    <title>Vinh Danh Học Sinh Xuất Sắc - 20 Năm học</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
         body {
             background: 
                 linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-                url('https://i.postimg.cc/zXBpzDZ3/z7148807256666-b4968c2ce8c2d3face248112ae76bc62.jpg') no-repeat center center fixed;
+                url('https://i.postimg.cc/yNGwbLmr/DSC08251.jpg') no-repeat center center fixed;
             background-size: cover;
             color: var(--text-light);
             min-height: 100vh;
@@ -215,7 +215,7 @@
             position: absolute;
             top: 30px;
             left: 50px;
-            height: 180px;
+            height: 250px;
             width: auto;
             z-index: 10;
             filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.7));
@@ -250,7 +250,7 @@
         
         /* CHỈNH SỬA: Làm chữ VINH DANH to hơn */
         .glowing-text {
-            font-size: 7rem;
+            font-size: 7rem; /* Tăng từ 5rem lên 7rem */
             margin-bottom: 20px;
             text-shadow: 0 0 10px rgba(254 , 224 , 255 , 0 ), 0 0 20px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0 );
             position: relative;
@@ -333,46 +333,39 @@
             vertical-align: middle;
         }
         
-        /* ===== STUDENT CARDS STYLES ===== */
-        .students-section {
+        /* ===== YEAR CARDS STYLES ===== */
+        .large-years {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
             width: 100%;
-            max-width: 1400px;
+            max-width: 1600px;
         }
         
-        .year-title {
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 50px;
-            color: var(--gold-color);
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-            font-weight: 700;
-        }
-        
-        .students-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-        
-        .student-card {
+        .large-year {
             background: linear-gradient(135deg, rgba(58, 109, 201, 0.8), rgba(42, 77, 155, 0.9));
-            border-radius: 20px;
-            padding: 25px;
-            text-align: center;
-            border: 2px solid rgba(255, 215, 0, 0.4);
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 215, 0, 0.2);
-            position: relative;
-            overflow: hidden;
-            min-height: 350px;
+            border-radius: 25px;
+            width: 320px;
+            height: 380px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            font-size: 2.8rem;
+            font-weight: bold;
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 215, 0, 0.2);
+            cursor: pointer;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
         }
         
-        .student-card::before {
+        .large-year::before {
             content: "";
             position: absolute;
             top: 0;
@@ -384,54 +377,133 @@
             transition: transform 0.8s;
         }
         
-        .student-card:hover::before {
+        .large-year:hover::before {
             transform: translateX(100%) skewX(-15deg);
         }
         
-        .student-card:hover {
-            transform: translateY(-10px) scale(1.03);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 215, 0, 0.4);
+        .large-year:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.4);
         }
         
-        .student-icon {
+        .large-year .year-icon {
+            font-size: 7rem;
+            margin-bottom: 30px;
+            color: #FFD700;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+            transition: all 0.4s;
+        }
+        
+        .large-year:hover .year-icon {
+            transform: scale(1.2) rotate(10deg);
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+        }
+        
+        .large-year .year-period {
             font-size: 3rem;
-            color: var(--gold-color);
             margin-bottom: 15px;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
-        }
-        
-        .student-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--gold-color);
-            margin-bottom: 20px;
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-        }
-        
-        .student-card h3 {
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-            color: var(--text-light);
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: 700;
         }
         
-        .achievement-badge {
-            background: linear-gradient(45deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.2));
-            border: 1px solid rgba(255, 215, 0, 0.5);
-            border-radius: 10px;
-            padding: 10px 15px;
-            font-size: 1rem;
-            color: var(--gold-light);
+        .large-year .year-label {
+            font-size: 1.6rem;
+            opacity: 0.9;
+            color: #e0e0ff;
             font-weight: 500;
-            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+        
+        /* ===== MASTERS/PHD BUTTON STYLES ===== */
+        .masters-phd-section {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .masters-phd-button {
+            background: linear-gradient(135deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
+            border-radius: 35px;
+            width: 650px;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            border: 4px solid rgba(255, 215, 0, 0.7);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 140, 66, 0.6);
+            cursor: pointer;
+            text-align: center;
+            padding: 40px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .masters-phd-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%) skewX(-15deg);
+            transition: transform 0.8s;
+        }
+        
+        .masters-phd-button:hover::before {
+            transform: translateX(100%) skewX(-15deg);
+        }
+        
+        .masters-phd-button:hover {
+            transform: translateY(-15px) scale(1.1);
+            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 140, 66, 0.8);
+        }
+        
+        .masters-phd-button .button-icon {
+            font-size: 5.5rem;
+            margin-bottom: 20px;
+            color: #FFD700;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
+            transition: all 0.4s;
+        }
+        
+        .masters-phd-button:hover .button-icon {
+            transform: scale(1.3) rotate(15deg);
+            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
+        }
+        
+        .masters-phd-button .button-text {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            line-height: 1.2;
         }
         
         /* ===== RESPONSIVE STYLES ===== */
         @media (max-width: 1200px) {
-            .students-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            .large-years {
+                gap: 40px;
+            }
+            
+            .large-year {
+                width: 280px;
+                height: 340px;
+            }
+            
+            .masters-phd-button {
+                width: 550px;
+                height: 200px;
             }
         }
         
@@ -447,8 +519,28 @@
                 font-size: 5rem;
             }
             
-            .students-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            .large-years {
+                gap: 30px;
+            }
+            
+            .large-year {
+                width: 240px;
+                height: 300px;
+                font-size: 2.2rem;
+            }
+            
+            .large-year .year-icon {
+                font-size: 5rem;
+            }
+            
+            .masters-phd-button {
+                width: 450px;
+                height: 180px;
+                font-size: 2.5rem;
+            }
+            
+            .masters-phd-button .button-icon {
+                font-size: 4.5rem;
             }
         }
         
@@ -465,18 +557,36 @@
                 font-size: 1.8rem;
             }
             
+            .large-years {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .large-year {
+                width: 90%;
+                max-width: 320px;
+                height: 200px;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            
+            .large-year .year-icon {
+                margin-bottom: 0;
+                font-size: 4rem;
+            }
+            
+            .masters-phd-button {
+                width: 90%;
+                height: 150px;
+                font-size: 2rem;
+            }
+            
+            .masters-phd-button .button-icon {
+                font-size: 3.5rem;
+            }
+            
             .section-title {
                 font-size: 2.5rem;
-            }
-            
-            .students-grid {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 20px;
-            }
-            
-            .student-card {
-                min-height: 300px;
-                padding: 20px;
             }
         }
         
@@ -493,18 +603,27 @@
                 font-size: 1.5rem;
             }
             
+            .large-year {
+                height: 180px;
+                font-size: 1.8rem;
+            }
+            
+            .large-year .year-icon {
+                font-size: 3.5rem;
+            }
+            
+            .masters-phd-button {
+                height: 130px;
+                font-size: 1.8rem;
+                padding: 20px;
+            }
+            
+            .masters-phd-button .button-icon {
+                font-size: 3rem;
+            }
+            
             .section-title {
                 font-size: 2rem;
-            }
-            
-            .students-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            
-            .student-card {
-                min-height: 280px;
-                padding: 15px;
             }
         }
     </style>
@@ -525,7 +644,7 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <h1 class="glowing-text">BẢNG VINH DANH</h1>
-                <p class="subtitle"> THẠC SĨ - TIẾN SĨ </p>
+                <p class="subtitle">HỌC SINH XUẤT SẮC CÁC NĂM HỌC</p>
                 <p class="subtitle">TRƯỜNG THCS NGUYỄN KHUYẾN - XÃ EA KAR - TỈNH ĐẮK LẮK</p>
                 <div class="header-decoration"></div>
             </div>
