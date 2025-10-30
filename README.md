@@ -333,6 +333,89 @@
             vertical-align: middle;
         }
         
+        /* ===== YEAR CARDS STYLES ===== */
+        .large-years {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            width: 100%;
+            max-width: 1600px;
+        }
+        
+        .large-year {
+            background: linear-gradient(135deg, rgba(58, 109, 201, 0.8), rgba(42, 77, 155, 0.9));
+            border-radius: 25px;
+            width: 320px;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.8rem;
+            font-weight: bold;
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 215, 0, 0.2);
+            cursor: pointer;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .large-year::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: translateX(-100%) skewX(-15deg);
+            transition: transform 0.8s;
+        }
+        
+        .large-year:hover::before {
+            transform: translateX(100%) skewX(-15deg);
+        }
+        
+        .large-year:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.4);
+        }
+        
+        .large-year .year-icon {
+            font-size: 7rem;
+            margin-bottom: 30px;
+            color: #FFD700;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+            transition: all 0.4s;
+        }
+        
+        .large-year:hover .year-icon {
+            transform: scale(1.2) rotate(10deg);
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+        }
+        
+        .large-year .year-period {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        
+        .large-year .year-label {
+            font-size: 1.6rem;
+            opacity: 0.9;
+            color: #e0e0ff;
+            font-weight: 500;
+        }
+        
         /* ===== STUDENT CARDS STYLES ===== */
         .students-section {
             width: 100%;
@@ -433,6 +516,221 @@
             line-height: 1.4;
         }
         
+        /* ===== BACK BUTTON STYLES ===== */
+        .back-section {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .back-button {
+            background: linear-gradient(135deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
+            border-radius: 25px;
+            width: 400px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            border: 3px solid rgba(255, 215, 0, 0.7);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 140, 66, 0.5);
+            cursor: pointer;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .back-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%) skewX(-15deg);
+            transition: transform 0.8s;
+        }
+        
+        .back-button:hover::before {
+            transform: translateX(100%) skewX(-15deg);
+        }
+        
+        .back-button:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(255, 140, 66, 0.7);
+        }
+        
+        .back-button .button-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+            transition: all 0.4s;
+        }
+        
+        .back-button:hover .button-icon {
+            transform: scale(1.2);
+        }
+        
+        .back-button .button-text {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        
+        /* ===== MASTERS/PHD BUTTON STYLES ===== */
+        .masters-phd-section {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .masters-phd-button {
+            background: linear-gradient(135deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
+            border-radius: 35px;
+            width: 650px;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            border: 4px solid rgba(255, 215, 0, 0.7);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 140, 66, 0.6);
+            cursor: pointer;
+            text-align: center;
+            padding: 40px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .masters-phd-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%) skewX(-15deg);
+            transition: transform 0.8s;
+        }
+        
+        .masters-phd-button:hover::before {
+            transform: translateX(100%) skewX(-15deg);
+        }
+        
+        .masters-phd-button:hover {
+            transform: translateY(-15px) scale(1.1);
+            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 140, 66, 0.8);
+        }
+        
+        .masters-phd-button .button-icon {
+            font-size: 5.5rem;
+            margin-bottom: 20px;
+            color: #FFD700;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
+            transition: all 0.4s;
+        }
+        
+        .masters-phd-button:hover .button-icon {
+            transform: scale(1.3) rotate(15deg);
+            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
+        }
+        
+        .masters-phd-button .button-text {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            line-height: 1.2;
+        }
+        
+        /* ===== BACK TO HONOR BOARD BUTTON STYLES ===== */
+        .back-to-board-section {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .back-to-board-button {
+            background: linear-gradient(135deg, rgba(26, 42, 108, 0.9), rgba(58, 109, 201, 0.9));
+            border-radius: 25px;
+            width: 500px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            border: 3px solid rgba(255, 215, 0, 0.7);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(26, 42, 108, 0.5);
+            cursor: pointer;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none; /* Xóa gạch chân */
+            color: inherit; /* Xóa màu tím mặc định */
+        }
+        
+        .back-to-board-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%) skewX(-15deg);
+            transition: transform 0.8s;
+        }
+        
+        .back-to-board-button:hover::before {
+            transform: translateX(100%) skewX(-15deg);
+        }
+        
+        .back-to-board-button:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(26, 42, 108, 0.7);
+            text-decoration: none; /* Đảm bảo không có gạch chân khi hover */
+            color: inherit; /* Đảm bảo không đổi màu khi hover */
+        }
+        
+        .back-to-board-button .button-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+            transition: all 0.4s;
+        }
+        
+        .back-to-board-button:hover .button-icon {
+            transform: scale(1.2);
+        }
+        
+        .back-to-board-button .button-text {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        
         /* ===== RESPONSIVE STYLES ===== */
         @media (max-width: 1200px) {
             .large-years {
@@ -442,6 +740,11 @@
             .large-year {
                 width: 280px;
                 height: 340px;
+            }
+            
+            .masters-phd-button {
+                width: 550px;
+                height: 200px;
             }
         }
         
@@ -469,6 +772,16 @@
             
             .large-year .year-icon {
                 font-size: 5rem;
+            }
+            
+            .masters-phd-button {
+                width: 450px;
+                height: 180px;
+                font-size: 2.5rem;
+            }
+            
+            .masters-phd-button .button-icon {
+                font-size: 4.5rem;
             }
         }
         
@@ -508,6 +821,28 @@
                 gap: 20px;
             }
             
+            .back-button {
+                width: 300px;
+                height: 70px;
+                font-size: 1.5rem;
+            }
+            
+            .back-to-board-button {
+                width: 350px;
+                height: 70px;
+                font-size: 1.5rem;
+            }
+            
+            .masters-phd-button {
+                width: 90%;
+                height: 150px;
+                font-size: 2rem;
+            }
+            
+            .masters-phd-button .button-icon {
+                font-size: 3.5rem;
+            }
+            
             .section-title {
                 font-size: 2.5rem;
             }
@@ -543,6 +878,36 @@
             .student-card {
                 min-height: 300px;
                 padding: 20px;
+            }
+            
+            .back-button {
+                width: 250px;
+                height: 60px;
+                font-size: 1.3rem;
+            }
+            
+            .back-button .button-icon {
+                font-size: 2rem;
+            }
+            
+            .back-to-board-button {
+                width: 280px;
+                height: 60px;
+                font-size: 1.3rem;
+            }
+            
+            .back-to-board-button .button-icon {
+                font-size: 2rem;
+            }
+            
+            .masters-phd-button {
+                height: 130px;
+                font-size: 1.8rem;
+                padding: 20px;
+            }
+            
+            .masters-phd-button .button-icon {
+                font-size: 3rem;
             }
             
             .section-title {
@@ -653,6 +1018,14 @@
                         <h3>ThS. VŨ THỊ H</h3>
                         <div class="achievement-badge">Thạc sĩ Địa lý</div>
                     </div>
+                </div>
+                
+                <!-- Back to Honor Board Button -->
+                <div class="back-to-board-section">
+                    <a href="https://stemprojectaccount.github.io/BANG-VINH-DANH/" class="back-to-board-button">
+                        <i class="fas fa-home button-icon"></i>
+                        <div class="button-text">QUAY LẠI TRANG BẢNG VINH DANH</div>
+                    </a>
                 </div>
             </div>
         </div>
