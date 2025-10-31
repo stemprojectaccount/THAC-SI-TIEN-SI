@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinh Danh Học Sinh Xuất Sắc - 20 Năm học</title>
+    <title>Thạc Sĩ - Tiến Sĩ | Trường THCS Nguyễn Khuyến</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
@@ -250,7 +251,7 @@
         
         /* CHỈNH SỬA: Làm chữ VINH DANH to hơn */
         .glowing-text {
-            font-size: 7rem; /* Tăng từ 5rem lên 7rem */
+            font-size: 6rem; /* Tăng từ 5rem lên 7rem */
             margin-bottom: 20px;
             text-shadow: 0 0 10px rgba(254 , 224 , 255 , 0 ), 0 0 20px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0 );
             position: relative;
@@ -272,12 +273,30 @@
             }
         }
         
+        /* CHỈNH SỬA: Làm chữ "THẠC SĨ - TIẾN SĨ" đậm và vàng hơn */
         .subtitle {
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 2.2rem; /* Tăng kích thước chữ */
+            margin-bottom: 15px;
             position: relative;
-            color: #e0e0ff;
-            font-weight: 500;
+            color: #FFD700; /* Màu vàng đậm */
+            font-weight: 800; /* Làm đậm hơn */
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.5); /* Thêm hiệu ứng bóng vàng */
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700); /* Gradient vàng cam */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 5px 0;
+            letter-spacing: 1px; /* Tăng khoảng cách chữ */
+            font-family: 'Playfair Display', serif; /* Dùng font trang trọng hơn */
+            animation: subtitleGlow 4s ease-in-out infinite alternate; /* Thêm hiệu ứng nhấp nháy */
+        }
+        
+        @keyframes subtitleGlow {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.5);
+            }
+            100% {
+                text-shadow: 0 0 15px rgba(255, 215, 0, 0.9), 0 0 25px rgba(255, 215, 0, 0.7), 0 0 35px rgba(255, 215, 0, 0.5);
+            }
         }
         
         .header-decoration {
@@ -333,129 +352,45 @@
             vertical-align: middle;
         }
         
-        /* ===== YEAR CARDS STYLES ===== */
-        .large-years {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 50px;
-            width: 100%;
-            max-width: 1600px;
-        }
-        
-        .large-year {
-            background: linear-gradient(135deg, rgba(58, 109, 201, 0.8), rgba(42, 77, 155, 0.9));
-            border-radius: 25px;
-            width: 320px;
-            height: 380px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.8rem;
-            font-weight: bold;
-            border: 2px solid rgba(255, 215, 0, 0.4);
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 215, 0, 0.2);
-            cursor: pointer;
-            text-align: center;
-            padding: 30px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .large-year::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-            transform: translateX(-100%) skewX(-15deg);
-            transition: transform 0.8s;
-        }
-        
-        .large-year:hover::before {
-            transform: translateX(100%) skewX(-15deg);
-        }
-        
-        .large-year:hover {
-            transform: translateY(-15px) scale(1.05);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.4);
-        }
-        
-        .large-year .year-icon {
-            font-size: 7rem;
-            margin-bottom: 30px;
-            color: #FFD700;
-            text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
-            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
-            transition: all 0.4s;
-        }
-        
-        .large-year:hover .year-icon {
-            transform: scale(1.2) rotate(10deg);
-            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
-        }
-        
-        .large-year .year-period {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            background: linear-gradient(45deg, #FFD700, #FFA500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
-        }
-        
-        .large-year .year-label {
-            font-size: 1.6rem;
-            opacity: 0.9;
-            color: #e0e0ff;
-            font-weight: 500;
-        }
-        
         /* ===== STUDENT CARDS STYLES ===== */
         .students-section {
             width: 100%;
-            max-width: 1600px;
+            max-width: 1400px;
             text-align: center;
         }
         
         .year-title {
-            font-size: 3rem;
-            margin-bottom: 50px;
+            font-size: 2.8rem;
+            margin-bottom: 40px;
             background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
             font-weight: 700;
             font-family: 'Playfair Display', serif;
         }
         
         .students-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 30px;
             margin-bottom: 60px;
         }
         
         .student-card {
-            background: linear-gradient(135deg, rgba(58, 109, 201, 0.9), rgba(42, 77, 155, 0.95));
+            background: linear-gradient(135deg, rgba(58, 109, 201, 0.8), rgba(42, 77, 155, 0.9));
             border-radius: 20px;
             padding: 25px;
             text-align: center;
             border: 2px solid rgba(255, 215, 0, 0.4);
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 215, 0, 0.2);
             position: relative;
             overflow: hidden;
-            min-height: 350px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            min-height: 320px;
         }
         
         .student-card::before {
@@ -480,60 +415,62 @@
         }
         
         .student-icon {
-            font-size: 3rem;
-            color: #FFD700;
+            font-size: 3.5rem;
             margin-bottom: 15px;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+            filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.5));
         }
         
         .student-image {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
+            margin-bottom: 15px;
             border: 3px solid rgba(255, 215, 0, 0.6);
-            margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
         }
         
         .student-card h3 {
             font-size: 1.6rem;
             margin-bottom: 15px;
-            color: #FFD700;
-            font-weight: 700;
+            color: #fff;
+            font-weight: 600;
             line-height: 1.3;
         }
         
         .achievement-badge {
-            background: linear-gradient(45deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
-            color: white;
-            padding: 12px 15px;
-            border-radius: 15px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #1a2a6c;
+            padding: 8px 15px;
+            border-radius: 20px;
             font-size: 1rem;
             font-weight: 600;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 215, 0, 0.5);
-            line-height: 1.4;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
         /* ===== BACK BUTTON STYLES ===== */
-        .back-section {
+        .back-to-board-section {
             width: 100%;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 30px;
         }
         
-        .back-button {
+        .back-to-board-button {
             background: linear-gradient(135deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
-            border-radius: 25px;
-            width: 400px;
-            height: 80px;
+            border-radius: 35px;
+            width: 500px;
+            height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.8rem;
             font-weight: bold;
-            border: 3px solid rgba(255, 215, 0, 0.7);
+            border: 4px solid rgba(255, 215, 0, 0.7);
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 140, 66, 0.5);
             cursor: pointer;
@@ -542,151 +479,8 @@
             margin: 0 auto;
             position: relative;
             overflow: hidden;
-        }
-        
-        .back-button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
-            transform: translateX(-100%) skewX(-15deg);
-            transition: transform 0.8s;
-        }
-        
-        .back-button:hover::before {
-            transform: translateX(100%) skewX(-15deg);
-        }
-        
-        .back-button:hover {
-            transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(255, 140, 66, 0.7);
-        }
-        
-        .back-button .button-icon {
-            font-size: 2.5rem;
-            margin-right: 15px;
-            color: #FFD700;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-            transition: all 0.4s;
-        }
-        
-        .back-button:hover .button-icon {
-            transform: scale(1.2);
-        }
-        
-        .back-button .button-text {
-            background: linear-gradient(45deg, #FFD700, #FFA500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
-        }
-        
-        /* ===== MASTERS/PHD BUTTON STYLES ===== */
-        .masters-phd-section {
-            width: 100%;
-            text-align: center;
-            margin-top: 30px;
-        }
-        
-        .masters-phd-button {
-            background: linear-gradient(135deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
-            border-radius: 35px;
-            width: 650px;
-            height: 240px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            font-weight: bold;
-            border: 4px solid rgba(255, 215, 0, 0.7);
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 140, 66, 0.6);
-            cursor: pointer;
-            text-align: center;
-            padding: 40px;
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .masters-phd-button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
-            transform: translateX(-100%) skewX(-15deg);
-            transition: transform 0.8s;
-        }
-        
-        .masters-phd-button:hover::before {
-            transform: translateX(100%) skewX(-15deg);
-        }
-        
-        .masters-phd-button:hover {
-            transform: translateY(-15px) scale(1.1);
-            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 140, 66, 0.8);
-        }
-        
-        .masters-phd-button .button-icon {
-            font-size: 5.5rem;
-            margin-bottom: 20px;
-            color: #FFD700;
-            text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
-            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
-            transition: all 0.4s;
-        }
-        
-        .masters-phd-button:hover .button-icon {
-            transform: scale(1.3) rotate(15deg);
-            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
-        }
-        
-        .masters-phd-button .button-text {
-            background: linear-gradient(45deg, #FFD700, #FFA500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-            line-height: 1.2;
-        }
-        
-        /* ===== BACK TO HONOR BOARD BUTTON STYLES ===== */
-        .back-to-board-section {
-            width: 100%;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-        
-        .back-to-board-button {
-            background: linear-gradient(135deg, rgba(26, 42, 108, 0.9), rgba(58, 109, 201, 0.9));
-            border-radius: 25px;
-            width: 500px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            font-weight: bold;
-            border: 3px solid rgba(255, 215, 0, 0.7);
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(26, 42, 108, 0.5);
-            cursor: pointer;
-            text-align: center;
-            padding: 20px;
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-            text-decoration: none; /* Xóa gạch chân */
-            color: inherit; /* Xóa màu tím mặc định */
+            text-decoration: none;
+            color: inherit;
         }
         
         .back-to-board-button::before {
@@ -706,22 +500,22 @@
         }
         
         .back-to-board-button:hover {
-            transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(26, 42, 108, 0.7);
-            text-decoration: none; /* Đảm bảo không có gạch chân khi hover */
-            color: inherit; /* Đảm bảo không đổi màu khi hover */
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 140, 66, 0.7);
         }
         
         .back-to-board-button .button-icon {
             font-size: 2.5rem;
             margin-right: 15px;
             color: #FFD700;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
             transition: all 0.4s;
         }
         
         .back-to-board-button:hover .button-icon {
             transform: scale(1.2);
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9));
         }
         
         .back-to-board-button .button-text {
@@ -729,22 +523,16 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+            line-height: 1.2;
         }
         
         /* ===== RESPONSIVE STYLES ===== */
         @media (max-width: 1200px) {
-            .large-years {
-                gap: 40px;
-            }
-            
-            .large-year {
-                width: 280px;
-                height: 340px;
-            }
-            
-            .masters-phd-button {
-                width: 550px;
-                height: 200px;
+            .back-to-board-button {
+                width: 450px;
+                height: 90px;
             }
         }
         
@@ -760,28 +548,18 @@
                 font-size: 5rem;
             }
             
-            .large-years {
-                gap: 30px;
+            .subtitle {
+                font-size: 1.8rem; /* Điều chỉnh kích thước cho tablet */
             }
             
-            .large-year {
-                width: 240px;
-                height: 300px;
+            .back-to-board-button {
+                width: 400px;
+                height: 80px;
+                font-size: 1.6rem;
+            }
+            
+            .back-to-board-button .button-icon {
                 font-size: 2.2rem;
-            }
-            
-            .large-year .year-icon {
-                font-size: 5rem;
-            }
-            
-            .masters-phd-button {
-                width: 450px;
-                height: 180px;
-                font-size: 2.5rem;
-            }
-            
-            .masters-phd-button .button-icon {
-                font-size: 4.5rem;
             }
         }
         
@@ -795,25 +573,7 @@
             }
             
             .subtitle {
-                font-size: 1.8rem;
-            }
-            
-            .large-years {
-                flex-direction: column;
-                gap: 30px;
-            }
-            
-            .large-year {
-                width: 90%;
-                max-width: 320px;
-                height: 200px;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-            
-            .large-year .year-icon {
-                margin-bottom: 0;
-                font-size: 4rem;
+                font-size: 1.5rem; /* Điều chỉnh kích thước cho mobile */
             }
             
             .students-grid {
@@ -821,26 +581,14 @@
                 gap: 20px;
             }
             
-            .back-button {
-                width: 300px;
-                height: 70px;
-                font-size: 1.5rem;
-            }
-            
             .back-to-board-button {
-                width: 350px;
-                height: 70px;
-                font-size: 1.5rem;
-            }
-            
-            .masters-phd-button {
                 width: 90%;
-                height: 150px;
-                font-size: 2rem;
+                height: 70px;
+                font-size: 1.4rem;
             }
             
-            .masters-phd-button .button-icon {
-                font-size: 3.5rem;
+            .back-to-board-button .button-icon {
+                font-size: 2rem;
             }
             
             .section-title {
@@ -858,16 +606,7 @@
             }
             
             .subtitle {
-                font-size: 1.5rem;
-            }
-            
-            .large-year {
-                height: 180px;
-                font-size: 1.8rem;
-            }
-            
-            .large-year .year-icon {
-                font-size: 3.5rem;
+                font-size: 1.3rem; /* Điều chỉnh kích thước cho mobile nhỏ */
             }
             
             .students-grid {
@@ -876,38 +615,19 @@
             }
             
             .student-card {
-                min-height: 300px;
+                min-height: 280px;
                 padding: 20px;
-            }
-            
-            .back-button {
-                width: 250px;
-                height: 60px;
-                font-size: 1.3rem;
-            }
-            
-            .back-button .button-icon {
-                font-size: 2rem;
             }
             
             .back-to-board-button {
-                width: 280px;
                 height: 60px;
-                font-size: 1.3rem;
+                font-size: 1.2rem;
+                padding: 15px;
             }
             
             .back-to-board-button .button-icon {
-                font-size: 2rem;
-            }
-            
-            .masters-phd-button {
-                height: 130px;
                 font-size: 1.8rem;
-                padding: 20px;
-            }
-            
-            .masters-phd-button .button-icon {
-                font-size: 3rem;
+                margin-right: 10px;
             }
             
             .section-title {
@@ -932,7 +652,7 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <h1 class="glowing-text">BẢNG VINH DANH</h1>
-                <p class="subtitle">HỌC SINH XUẤT SẮC CÁC NĂM HỌC</p>
+                <p class="subtitle">THẠC SĨ - TIẾN SĨ</p>
                 <p class="subtitle">TRƯỜNG THCS NGUYỄN KHUYẾN - XÃ EA KAR - TỈNH ĐẮK LẮK</p>
                 <div class="header-decoration"></div>
             </div>
@@ -952,7 +672,7 @@
                     <!-- Thạc sĩ 1 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/pXKHFCj7/z7155430514556-a28582aaea15b1af8f5ac6a324a0ce69.jpg" alt="Thạc sĩ Nguyễn Văn A" class="student-image">
+                        <img src="https://i.postimg.cc/pXKHFCj7/z7155430514556-a28582aaea15b1af8f5ac6a324a0ce69.jpg" alt="Thạc sĩ Nguyễn Hoàng Châu" class="student-image">
                         <h3>Nguyễn Hoàng Châu</h3>
                         <h3>niên khoá 2007-2011</h3>
                         <div class="achievement-badge">HCB cuộc thi Olympic Tiếng Anh trên Internet cấp QG, Giải Ba cuộc thi HSG cấp tỉnh môn Tiếng Anh 
@@ -963,7 +683,7 @@
                     <!-- Thạc sĩ 2 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/SKPwvg6r/z7161283901144-c5cb1c82ad095a2e3160c96bdaa20467.jpg" alt="Thạc sĩ Trần Thị B" class="student-image">
+                        <img src="https://i.postimg.cc/SKPwvg6r/z7161283901144-c5cb1c82ad095a2e3160c96bdaa20467.jpg" alt="Thạc sĩ Nguyễn Ngọc Sơn" class="student-image">
                         <h3>Nguyễn Ngọc Sơn</h3>
                         <h3>niên khoá 2011-2015</h3>
                         <div class="achievement-badge"> Học sinh giỏi môn Toán cấp Tỉnh, cấp Quốc gia
@@ -1024,7 +744,7 @@
                 <div class="back-to-board-section">
                     <a href="https://stemprojectaccount.github.io/BANG-VINH-DANH/" class="back-to-board-button">
                         <i class="fas fa-home button-icon"></i>
-                        <div class="button-text">QUAY LẠI TRANG BẢNG VINH DANH</div>
+                        <div class="button-text">QUAY LẠI</div>
                     </a>
                 </div>
             </div>
@@ -1076,8 +796,9 @@
             createParticles();
             createFloatingElements();
             
-            console.log("=== TRANG VINH DANH THẠC SĨ ===");
-            console.log("Trang hiển thị danh sách các thạc sĩ tốt nghiệp xuất sắc");
+            console.log("=== TRANG THẠC SĨ - TIẾN SĨ ===");
+            console.log("Hiển thị danh sách các thạc sĩ và tiến sĩ");
+            console.log("Có nút QUAY LẠI TRANG BẢNG VINH DANH");
         });
     </script>
 </body>
