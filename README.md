@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -273,30 +272,17 @@
             }
         }
         
-        /* CHỈNH SỬA: Làm chữ "THẠC SĨ - TIẾN SĨ" đậm và vàng hơn */
+        /* CHỈNH SỬA: Làm chữ "THẠC SĨ - TIẾN SĨ" màu trắng */
         .subtitle {
             font-size: 2.2rem; /* Tăng kích thước chữ */
             margin-bottom: 15px;
             position: relative;
-            color: #FFD700; /* Màu vàng đậm */
+            color: #FFFFFF; /* Đã đổi thành màu trắng */
             font-weight: 800; /* Làm đậm hơn */
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.5); /* Thêm hiệu ứng bóng vàng */
-            background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700); /* Gradient vàng cam */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5); /* Thêm hiệu ứng bóng trắng */
             padding: 5px 0;
             letter-spacing: 1px; /* Tăng khoảng cách chữ */
             font-family: 'Playfair Display', serif; /* Dùng font trang trọng hơn */
-            animation: subtitleGlow 4s ease-in-out infinite alternate; /* Thêm hiệu ứng nhấp nháy */
-        }
-        
-        @keyframes subtitleGlow {
-            0% {
-                text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.5);
-            }
-            100% {
-                text-shadow: 0 0 15px rgba(255, 215, 0, 0.9), 0 0 25px rgba(255, 215, 0, 0.7), 0 0 35px rgba(255, 215, 0, 0.5);
-            }
         }
         
         .header-decoration {
@@ -371,7 +357,7 @@
         
         .students-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 30px;
             margin-bottom: 60px;
         }
@@ -389,8 +375,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 320px;
+            justify-content: flex-start;
+            min-height: 380px;
         }
         
         .student-card::before {
@@ -434,10 +420,17 @@
         
         .student-card h3 {
             font-size: 1.6rem;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             color: #fff;
             font-weight: 600;
             line-height: 1.3;
+        }
+        
+        .student-nienkhoa {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #FFD700;
+            font-weight: 500;
         }
         
         .achievement-badge {
@@ -451,6 +444,18 @@
             max-width: 100%;
             overflow: hidden;
             text-overflow: ellipsis;
+            margin-bottom: 10px;
+        }
+        
+        .student-details {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #e0e0ff;
+            text-align: left;
+            max-height: 120px;
+            overflow-y: auto;
+            padding: 5px;
+            width: 100%;
         }
         
         /* ===== BACK BUTTON STYLES ===== */
@@ -561,6 +566,10 @@
             .back-to-board-button .button-icon {
                 font-size: 2.2rem;
             }
+            
+            .students-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
         }
         
         @media (max-width: 768px) {
@@ -577,7 +586,7 @@
             }
             
             .students-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
                 gap: 20px;
             }
             
@@ -615,7 +624,7 @@
             }
             
             .student-card {
-                min-height: 280px;
+                min-height: 350px;
                 padding: 20px;
             }
             
@@ -674,10 +683,15 @@
                         <i class="fas fa-user-graduate student-icon"></i>
                         <img src="https://i.postimg.cc/pXKHFCj7/z7155430514556-a28582aaea15b1af8f5ac6a324a0ce69.jpg" alt="Thạc sĩ Nguyễn Hoàng Châu" class="student-image">
                         <h3>Nguyễn Hoàng Châu</h3>
-                        <h3>niên khoá 2007-2011</h3>
-                        <div class="achievement-badge">HCB cuộc thi Olympic Tiếng Anh trên Internet cấp QG, Giải Ba cuộc thi HSG cấp tỉnh môn Tiếng Anh 
-                        2016-2020: làm việc tại Hãng hàng không Vietjet; tiếp viên Hàng không năm 
-                        2020-2021: hoàn thành Commercial Pilot License tại trường Air Venture, Olive Branch, Mississippi, USA năm 2023; hoàn thành khoá học chuyển loại tàu bay Airbus A320 Type Rating tại Vietjet Aviation Academy; từ 2023 đến nay: làm phi công của Vietjet, chức vụ: Cơ phó. </div>
+                        <div class="student-nienkhoa">Niên khoá 2007-2011</div>
+                        <div class="achievement-badge">ThS. Phi công - Vietjet Aviation</div>
+                        <div class="student-details">
+                            <strong>Thành tích:</strong> HCB cuộc thi Olympic Tiếng Anh trên Internet cấp QG, Giải Ba cuộc thi HSG cấp tỉnh môn Tiếng Anh.<br>
+                            <strong>2016-2020:</strong> Làm việc tại Hãng hàng không Vietjet; tiếp viên Hàng không.<br>
+                            <strong>2020-2021:</strong> Hoàn thành Commercial Pilot License tại trường Air Venture, Olive Branch, Mississippi, USA.<br>
+                            <strong>2023:</strong> Hoàn thành khoá học chuyển loại tàu bay Airbus A320 Type Rating tại Vietjet Aviation Academy.<br>
+                            <strong>Hiện nay:</strong> Làm phi công của Vietjet, chức vụ: Cơ phó.
+                        </div>
                     </div>
                     
                     <!-- Thạc sĩ 2 -->
@@ -685,58 +699,104 @@
                         <i class="fas fa-user-graduate student-icon"></i>
                         <img src="https://i.postimg.cc/SKPwvg6r/z7161283901144-c5cb1c82ad095a2e3160c96bdaa20467.jpg" alt="Thạc sĩ Nguyễn Ngọc Sơn" class="student-image">
                         <h3>Nguyễn Ngọc Sơn</h3>
-                        <h3>niên khoá 2011-2015</h3>
-                        <div class="achievement-badge"> Học sinh giỏi môn Toán cấp Tỉnh, cấp Quốc gia
-                        Tốt nghiệp Học Viện Biên phòng thành phố Kaliningrad - Liên Bang Nga và được Bộ Quốc phòng tặng Bằng Khen. Hiện nay mang quân Hàm Thượng úy
-                        đang công tác tại  Đoàn 871 trực thuộc Tổng cục chính trị Quân đội nhân dân Việt Nam và đã tốt nghiệp Xuất sắc chương trình Thạc sĩ</div>
+                        <div class="student-nienkhoa">Niên khoá 2011-2015</div>
+                        <div class="achievement-badge">ThS. Quân sự - Thượng úy</div>
+                        <div class="student-details">
+                            <strong>Thành tích:</strong> Học sinh giỏi môn Toán cấp Tỉnh, cấp Quốc gia.<br>
+                            <strong>Học vấn:</strong> Tốt nghiệp Học Viện Biên phòng thành phố Kaliningrad - Liên Bang Nga và được Bộ Quốc phòng tặng Bằng Khen.<br>
+                            <strong>Hiện nay:</strong> Mang quân Hàm Thượng úy, đang công tác tại Đoàn 871 trực thuộc Tổng cục chính trị Quân đội nhân dân Việt Nam.<br>
+                            <strong>Bằng cấp:</strong> Đã tốt nghiệp Xuất sắc chương trình Thạc sĩ.
+                        </div>
                     </div>
                     
                     <!-- Thạc sĩ 3 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Lê Văn C" class="student-image">
-                        <h3>ThS. LÊ VĂN C</h3>
-                        <div class="achievement-badge">Thạc sĩ Toán học</div>
+                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Trần Văn Nam" class="student-image">
+                        <h3>ThS. Trần Văn Nam</h3>
+                        <div class="student-nienkhoa">Niên khoá 2005-2009</div>
+                        <div class="achievement-badge">ThS. Công nghệ Thông tin</div>
+                        <div class="student-details">
+                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Công nghệ Thông tin tại Đại học Bách Khoa Hà Nội.<br>
+                            <strong>Kinh nghiệm:</strong> 8 năm làm việc trong lĩnh vực phát triển phần mềm.<br>
+                            <strong>Hiện nay:</strong> Giám đốc kỹ thuật tại công ty FPT Software, chuyên về các giải pháp AI và Machine Learning.<br>
+                            <strong>Thành tích:</strong> Đạt giải Nhì Olympic Tin học Quốc gia khi còn là học sinh.
+                        </div>
                     </div>
                     
                     <!-- Thạc sĩ 4 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Phạm Thị D" class="student-image">
-                        <h3>ThS. PHẠM THỊ D</h3>
-                        <div class="achievement-badge">Thạc sĩ Vật lý</div>
+                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Lê Thị Hương" class="student-image">
+                        <h3>ThS. Lê Thị Hương</h3>
+                        <div class="student-nienkhoa">Niên khoá 2008-2012</div>
+                        <div class="achievement-badge">ThS. Quản trị Kinh doanh</div>
+                        <div class="student-details">
+                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Quản trị Kinh doanh tại Đại học Kinh tế Quốc dân.<br>
+                            <strong>Kinh nghiệm:</strong> 7 năm làm việc trong lĩnh vực tài chính ngân hàng.<br>
+                            <strong>Hiện nay:</strong> Trưởng phòng Kinh doanh tại Ngân hàng Techcombank chi nhánh Đắk Lắk.<br>
+                            <strong>Thành tích:</strong> Đạt học bổng toàn phần cho chương trình thạc sĩ, từng là học sinh giỏi cấp tỉnh môn Văn.
+                        </div>
                     </div>
                     
                     <!-- Thạc sĩ 5 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Hoàng Văn E" class="student-image">
-                        <h3>ThS. HOÀNG VĂN E</h3>
-                        <div class="achievement-badge">Thạc sĩ Hóa học</div>
+                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Phạm Quang Minh" class="student-image">
+                        <h3>ThS. Phạm Quang Minh</h3>
+                        <div class="student-nienkhoa">Niên khoá 2010-2014</div>
+                        <div class="achievement-badge">ThS. Kỹ thuật Xây dựng</div>
+                        <div class="student-details">
+                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Kỹ thuật Xây dựng tại Đại học Xây dựng Hà Nội.<br>
+                            <strong>Kinh nghiệm:</strong> 6 năm làm việc trong các dự án xây dựng cầu đường.<br>
+                            <strong>Hiện nay:</strong> Kỹ sư trưởng tại Công ty CP Xây dựng 47, phụ trách các dự án giao thông tại Tây Nguyên.<br>
+                            <strong>Thành tích:</strong> Đạt giải Khuyến khích Olympic Vật lý cấp tỉnh khi còn là học sinh.
+                        </div>
                     </div>
                     
                     <!-- Thạc sĩ 6 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Ngô Thị F" class="student-image">
-                        <h3>ThS. NGÔ THỊ F</h3>
-                        <div class="achievement-badge">Thạc sĩ Sinh học</div>
+                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Nguyễn Thị Lan" class="student-image">
+                        <h3>ThS. Nguyễn Thị Lan</h3>
+                        <div class="student-nienkhoa">Niên khoá 2009-2013</div>
+                        <div class="achievement-badge">ThS. Y học</div>
+                        <div class="student-details">
+                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Y học tại Đại học Y Dược TP.HCM.<br>
+                            <strong>Kinh nghiệm:</strong> 5 năm làm việc tại Bệnh viện Đa khoa tỉnh Đắk Lắk.<br>
+                            <strong>Hiện nay:</strong> Bác sĩ chuyên khoa Nội tổng quát tại Bệnh viện Đa khoa vùng Tây Nguyên.<br>
+                            <strong>Thành tích:</strong> Đạt giải Nhất học sinh giỏi cấp tỉnh môn Sinh học, từng tham gia đội tuyển quốc gia.
+                        </div>
                     </div>
                     
                     <!-- Thạc sĩ 7 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Đỗ Văn G" class="student-image">
-                        <h3>ThS. ĐỖ VĂN G</h3>
-                        <div class="achievement-badge">Thạc sĩ Lịch sử</div>
+                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Hoàng Văn Tùng" class="student-image">
+                        <h3>ThS. Hoàng Văn Tùng</h3>
+                        <div class="student-nienkhoa">Niên khoá 2006-2010</div>
+                        <div class="achievement-badge">ThS. Luật học</div>
+                        <div class="student-details">
+                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Luật học tại Học viện Tư pháp.<br>
+                            <strong>Kinh nghiệm:</strong> 9 năm hành nghề luật sư.<br>
+                            <strong>Hiện nay:</strong> Luật sư thành viên tại Văn phòng Luật sư Hoàng Hà, chuyên về luật dân sự và kinh doanh.<br>
+                            <strong>Thành tích:</strong> Đạt giải Ba học sinh giỏi cấp tỉnh môn Lịch sử, có nhiều đóng góp trong các hoạt động Đoàn trường.
+                        </div>
                     </div>
                     
                     <!-- Thạc sĩ 8 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Vũ Thị H" class="student-image">
-                        <h3>ThS. VŨ THỊ H</h3>
-                        <div class="achievement-badge">Thạc sĩ Địa lý</div>
+                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Vũ Thị Hồng" class="student-image">
+                        <h3>ThS. Vũ Thị Hồng</h3>
+                        <div class="student-nienkhoa">Niên khoá 2012-2016</div>
+                        <div class="achievement-badge">ThS. Ngôn ngữ Anh</div>
+                        <div class="student-details">
+                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Ngôn ngữ Anh tại Đại học Ngoại ngữ - ĐHQG Hà Nội.<br>
+                            <strong>Kinh nghiệm:</strong> 4 năm giảng dạy tiếng Anh tại các trung tâm ngoại ngữ.<br>
+                            <strong>Hiện nay:</strong> Giảng viên tiếng Anh tại Trường Cao đẳng Sư phạm Đắk Lắk.<br>
+                            <strong>Thành tích:</strong> Đạt giải Nhì học sinh giỏi cấp tỉnh môn Tiếng Anh, có chứng chỉ IELTS 8.0.
+                        </div>
                     </div>
                 </div>
                 
