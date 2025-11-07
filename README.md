@@ -684,7 +684,7 @@
                         <img src="https://i.postimg.cc/pXKHFCj7/z7155430514556-a28582aaea15b1af8f5ac6a324a0ce69.jpg" alt="Thạc sĩ Nguyễn Hoàng Châu" class="student-image">
                         <h3>Nguyễn Hoàng Châu</h3>
                         <div class="student-nienkhoa">Niên khoá 2007-2011</div>
-                        <div class="achievement-badge"> Phi công - Vietjet Aviation</div>
+                        <div class="achievement-badge"> Cơ phó Hãng hàng không Vietjet </div>
                         <div class="student-details">
                             <strong>Thành tích:</strong> HCB cuộc thi Olympic Tiếng Anh trên Internet cấp QG, Giải Ba cuộc thi HSG cấp tỉnh môn Tiếng Anh.<br>
                             <strong>2016-2020:</strong> Làm việc tại Hãng hàng không Vietjet; tiếp viên Hàng không.<br>
