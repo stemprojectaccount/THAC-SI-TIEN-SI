@@ -712,15 +712,12 @@
                     <!-- Thạc sĩ 3 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Trần Văn Nam" class="student-image">
-                        <h3>ThS. Trần Văn Nam</h3>
-                        <div class="student-nienkhoa">Niên khoá 2005-2009</div>
-                        <div class="achievement-badge">ThS. Công nghệ Thông tin</div>
+                        <img src="https://i.postimg.cc/QxB2YrY6/z7217127898383-7dc6b2da35f71857a74a765b7f76cc1c.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
+                        <h3>ThS. Nguyễn Lục Minh Anh </h3>
+                        <div class="student-nienkhoa">Niên khoá 2015-2016</div>
+                        <div class="achievement-badge">ThS. chuyên ngành tiếng anh  đại học Liverpool </div>
                         <div class="student-details">
-                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Công nghệ Thông tin tại Đại học Bách Khoa Hà Nội.<br>
-                            <strong>Kinh nghiệm:</strong> 8 năm làm việc trong lĩnh vực phát triển phần mềm.<br>
-                            <strong>Hiện nay:</strong> Giám đốc kỹ thuật tại công ty FPT Software, chuyên về các giải pháp AI và Machine Learning.<br>
-                            <strong>Thành tích:</strong> Đạt giải Nhì Olympic Tin học Quốc gia khi còn là học sinh.
+                            <strong>Hiện nay:</strong> ThS. chuyên ngành tiếng anh  đại học Liverpool <br>
                         </div>
                     </div>
                     
