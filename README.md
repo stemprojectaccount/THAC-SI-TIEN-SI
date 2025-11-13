@@ -712,7 +712,7 @@
                     <!-- Thạc sĩ 3 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/QxB2YrY6/z7217127898383-7dc6b2da35f71857a74a765b7f76cc1c.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
+                        <img src="https://i.postimg.cc/h4Tf7Hcm/z7217127903957-2dfc1971f60cd954fc80721588e6e211.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
                         <h3>ThS. Nguyễn Lục Minh Anh </h3>
                         <div class="student-nienkhoa">Niên khoá 2015-2016</div>
                         <div class="achievement-badge">ThS. chuyên ngành tiếng anh  đại học Liverpool </div>
@@ -721,82 +721,6 @@
                         </div>
                     </div>
                     
-                    <!-- Thạc sĩ 4 -->
-                    <div class="student-card">
-                        <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Lê Thị Hương" class="student-image">
-                        <h3>ThS. Lê Thị Hương</h3>
-                        <div class="student-nienkhoa">Niên khoá 2008-2012</div>
-                        <div class="achievement-badge">ThS. Quản trị Kinh doanh</div>
-                        <div class="student-details">
-                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Quản trị Kinh doanh tại Đại học Kinh tế Quốc dân.<br>
-                            <strong>Kinh nghiệm:</strong> 7 năm làm việc trong lĩnh vực tài chính ngân hàng.<br>
-                            <strong>Hiện nay:</strong> Trưởng phòng Kinh doanh tại Ngân hàng Techcombank chi nhánh Đắk Lắk.<br>
-                            <strong>Thành tích:</strong> Đạt học bổng toàn phần cho chương trình thạc sĩ, từng là học sinh giỏi cấp tỉnh môn Văn.
-                        </div>
-                    </div>
-                    
-                    <!-- Thạc sĩ 5 -->
-                    <div class="student-card">
-                        <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Phạm Quang Minh" class="student-image">
-                        <h3>ThS. Phạm Quang Minh</h3>
-                        <div class="student-nienkhoa">Niên khoá 2010-2014</div>
-                        <div class="achievement-badge">ThS. Kỹ thuật Xây dựng</div>
-                        <div class="student-details">
-                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Kỹ thuật Xây dựng tại Đại học Xây dựng Hà Nội.<br>
-                            <strong>Kinh nghiệm:</strong> 6 năm làm việc trong các dự án xây dựng cầu đường.<br>
-                            <strong>Hiện nay:</strong> Kỹ sư trưởng tại Công ty CP Xây dựng 47, phụ trách các dự án giao thông tại Tây Nguyên.<br>
-                            <strong>Thành tích:</strong> Đạt giải Khuyến khích Olympic Vật lý cấp tỉnh khi còn là học sinh.
-                        </div>
-                    </div>
-                    
-                    <!-- Thạc sĩ 6 -->
-                    <div class="student-card">
-                        <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Nguyễn Thị Lan" class="student-image">
-                        <h3>ThS. Nguyễn Thị Lan</h3>
-                        <div class="student-nienkhoa">Niên khoá 2009-2013</div>
-                        <div class="achievement-badge">ThS. Y học</div>
-                        <div class="student-details">
-                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Y học tại Đại học Y Dược TP.HCM.<br>
-                            <strong>Kinh nghiệm:</strong> 5 năm làm việc tại Bệnh viện Đa khoa tỉnh Đắk Lắk.<br>
-                            <strong>Hiện nay:</strong> Bác sĩ chuyên khoa Nội tổng quát tại Bệnh viện Đa khoa vùng Tây Nguyên.<br>
-                            <strong>Thành tích:</strong> Đạt giải Nhất học sinh giỏi cấp tỉnh môn Sinh học, từng tham gia đội tuyển quốc gia.
-                        </div>
-                    </div>
-                    
-                    <!-- Thạc sĩ 7 -->
-                    <div class="student-card">
-                        <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png" alt="Thạc sĩ Hoàng Văn Tùng" class="student-image">
-                        <h3>ThS. Hoàng Văn Tùng</h3>
-                        <div class="student-nienkhoa">Niên khoá 2006-2010</div>
-                        <div class="achievement-badge">ThS. Luật học</div>
-                        <div class="student-details">
-                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Luật học tại Học viện Tư pháp.<br>
-                            <strong>Kinh nghiệm:</strong> 9 năm hành nghề luật sư.<br>
-                            <strong>Hiện nay:</strong> Luật sư thành viên tại Văn phòng Luật sư Hoàng Hà, chuyên về luật dân sự và kinh doanh.<br>
-                            <strong>Thành tích:</strong> Đạt giải Ba học sinh giỏi cấp tỉnh môn Lịch sử, có nhiều đóng góp trong các hoạt động Đoàn trường.
-                        </div>
-                    </div>
-                    
-                    <!-- Thạc sĩ 8 -->
-                    <div class="student-card">
-                        <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png" alt="Thạc sĩ Vũ Thị Hồng" class="student-image">
-                        <h3>ThS. Vũ Thị Hồng</h3>
-                        <div class="student-nienkhoa">Niên khoá 2012-2016</div>
-                        <div class="achievement-badge">ThS. Ngôn ngữ Anh</div>
-                        <div class="student-details">
-                            <strong>Học vấn:</strong> Tốt nghiệp Thạc sĩ Ngôn ngữ Anh tại Đại học Ngoại ngữ - ĐHQG Hà Nội.<br>
-                            <strong>Kinh nghiệm:</strong> 4 năm giảng dạy tiếng Anh tại các trung tâm ngoại ngữ.<br>
-                            <strong>Hiện nay:</strong> Giảng viên tiếng Anh tại Trường Cao đẳng Sư phạm Đắk Lắk.<br>
-                            <strong>Thành tích:</strong> Đạt giải Nhì học sinh giỏi cấp tỉnh môn Tiếng Anh, có chứng chỉ IELTS 8.0.
-                        </div>
-                    </div>
-                </div>
-                
                 <!-- Back to Honor Board Button -->
                 <div class="back-to-board-section">
                     <a href="https://stemprojectaccount.github.io/BANG-VINH-DANH/" class="back-to-board-button">
