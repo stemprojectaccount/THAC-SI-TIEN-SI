@@ -716,11 +716,11 @@
                         <img src="https://i.postimg.cc/QxB2YrY6/z7217127898383_7dc6b2da35f71857a74a765b7f76cc1c.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
                         <h3>ThS. Nguyễn Lục Minh Anh </h3>
                         <div class="student-nienkhoa">Niên khoá 2015-2016</div>
-                        <div class="achievement-badge">ThS. chuyên ngành tiếng anh  đại học Liverpool </div>
+                        <div class="achievement-badge">ThS. chuyên ngành Tiếng Anh  Đại Học Liverpool </div>
                         <div class="student-details">
                              <strong>Thành tích:</strong> Nhiều năm đạt học sinh giỏi , giải ba cấp  huyện môn tiếng anh , <br>
-                             <strong>Học vấn:</strong> Tốt nghiệp ThS chuyền ngành sư phạm tiếng anh của trường  Đại Học Liverpool .<br>
-                            <strong>Hiện nay:</strong> ThS. chuyên ngành sư phạm  tiếng anh của trường  đại học Liverpool <br>
+                             <strong>Học vấn:</strong> Tốt nghiệp ThS chuyền ngành sư phạm Tiếng Anh của trường  Đại Học Liverpool .<br>
+                            <strong>Hiện nay:</strong> ThS. chuyên ngành sư phạm  Tiếng Anh của trường  Đại Học Liverpool <br>
                         </div>
                     </div>
                 </div>
