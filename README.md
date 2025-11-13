@@ -713,7 +713,7 @@
                     <!-- Thạc sĩ 3 -->
                     <div class="student-card">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/h4Tf7Hcm/z7217127903957-2dfc1971f60cd954fc80721588e6e211.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
+                        <img src="https://i.postimg.cc/QxB2YrY6/z7217127898383_7dc6b2da35f71857a74a765b7f76cc1c.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
                         <h3>ThS. Nguyễn Lục Minh Anh </h3>
                         <div class="student-nienkhoa">Niên khoá 2015-2016</div>
                         <div class="achievement-badge">ThS. chuyên ngành tiếng anh  đại học Liverpool </div>
