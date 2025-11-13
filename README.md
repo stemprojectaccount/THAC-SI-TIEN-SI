@@ -718,7 +718,9 @@
                         <div class="student-nienkhoa">Niên khoá 2015-2016</div>
                         <div class="achievement-badge">ThS. chuyên ngành tiếng anh  đại học Liverpool </div>
                         <div class="student-details">
-                            <strong>Hiện nay:</strong> ThS. chuyên ngành tiếng anh  đại học Liverpool <br>
+                             <strong>Thành tích:</strong> Nhiều năm đạt học sinh giỏi , giải ba cấp môn tiếng anh , <br>
+                             <strong>Học vấn:</strong> Tốt nghiệp ThS chuyền ngành sư phạm Đại Học Liverpool .<br>
+                            <strong>Hiện nay:</strong> ThS. chuyên ngành sư phạm  tiếng anh  đại học Liverpool <br>
                         </div>
                     </div>
                 </div>
