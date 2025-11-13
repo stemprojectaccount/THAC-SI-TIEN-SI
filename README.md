@@ -377,6 +377,7 @@
             align-items: center;
             justify-content: flex-start;
             min-height: 380px;
+            cursor: pointer;
         }
         
         .student-card::before {
@@ -456,6 +457,128 @@
             overflow-y: auto;
             padding: 5px;
             width: 100%;
+        }
+        
+        /* ===== MODAL STYLES ===== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background: linear-gradient(135deg, rgba(58, 109, 201, 0.95), rgba(42, 77, 155, 0.95));
+            border-radius: 25px;
+            padding: 40px;
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.7);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 3px solid rgba(255, 215, 0, 0.6);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.4);
+        }
+        
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #FFD700;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .modal-close:hover {
+            color: #fff;
+            background: rgba(255, 215, 0, 0.5);
+            transform: rotate(90deg);
+        }
+        
+        .modal-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .modal-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid rgba(255, 215, 0, 0.7);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+        
+        .modal-title {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        .modal-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #FFD700;
+            font-weight: 600;
+        }
+        
+        .modal-badge {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #1a2a6c;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        
+        .modal-details {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #e0e0ff;
+            text-align: left;
+        }
+        
+        .modal-details strong {
+            color: #FFD700;
         }
         
         /* ===== BACK BUTTON STYLES ===== */
@@ -571,6 +694,18 @@
             .students-grid {
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             }
+            
+            .modal-content {
+                padding: 30px;
+            }
+            
+            .modal-title {
+                font-size: 1.8rem;
+            }
+            
+            .modal-subtitle {
+                font-size: 1.2rem;
+            }
         }
         
         @media (max-width: 768px) {
@@ -603,6 +738,33 @@
             
             .section-title {
                 font-size: 2.5rem;
+            }
+            
+            .modal-content {
+                padding: 25px;
+                width: 95%;
+            }
+            
+            .modal-image {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .modal-title {
+                font-size: 1.6rem;
+            }
+            
+            .modal-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .modal-badge {
+                font-size: 1rem;
+                padding: 8px 15px;
+            }
+            
+            .modal-details {
+                font-size: 1rem;
             }
         }
         
@@ -643,6 +805,36 @@
             .section-title {
                 font-size: 2rem;
             }
+            
+            .modal-content {
+                padding: 20px;
+            }
+            
+            .modal-header {
+                margin-bottom: 15px;
+            }
+            
+            .modal-image {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .modal-title {
+                font-size: 1.4rem;
+            }
+            
+            .modal-subtitle {
+                font-size: 1rem;
+            }
+            
+            .modal-badge {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+            }
+            
+            .modal-details {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -652,6 +844,22 @@
     <div class="particles" id="particles"></div>
     <div class="floating-elements" id="floatingElements"></div>
     <div class="spotlight"></div>
+    
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <img src="" alt="" class="modal-image" id="modalImage">
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <div class="modal-subtitle" id="modalSubtitle"></div>
+                <div class="modal-badge" id="modalBadge"></div>
+            </div>
+            <div class="modal-details" id="modalDetails"></div>
+        </div>
+    </div>
     
     <div class="container">
         <!-- Header Section -->
@@ -680,7 +888,7 @@
                 
                 <div class="students-grid" id="studentsGrid">
                     <!-- Thạc sĩ 1 -->
-                    <div class="student-card">
+                    <div class="student-card" data-student-id="1">
                         <i class="fas fa-user-graduate student-icon"></i>
                         <img src="https://i.postimg.cc/pXKHFCj7/z7155430514556-a28582aaea15b1af8f5ac6a324a0ce69.jpg" alt="Thạc sĩ Nguyễn Hoàng Châu" class="student-image">
                         <h3>Nguyễn Hoàng Châu</h3>
@@ -696,7 +904,7 @@
                     </div>
                     
                     <!-- Thạc sĩ 2 -->
-                    <div class="student-card">
+                    <div class="student-card" data-student-id="2">
                         <i class="fas fa-user-graduate student-icon"></i>
                         <img src="https://i.postimg.cc/SKPwvg6r/z7161283901144-c5cb1c82ad095a2e3160c96bdaa20467.jpg" alt="Thạc sĩ Nguyễn Ngọc Sơn" class="student-image">
                         <h3>Nguyễn Ngọc Sơn</h3>
@@ -711,7 +919,7 @@
                     </div>
                     
                     <!-- Thạc sĩ 3 -->
-                    <div class="student-card">
+                    <div class="student-card" data-student-id="3">
                         <i class="fas fa-user-graduate student-icon"></i>
                         <img src="https://i.postimg.cc/7Lm5zG33/z7220311973571-93a74145af47d69dc8cc3fb078dcb592.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
                         <h3>ThS. Nguyễn Lục Minh Anh </h3>
@@ -776,10 +984,71 @@
             }
         }
 
+        // ===== MODAL FUNCTIONALITY =====
+        function setupModal() {
+            const modalOverlay = document.getElementById('modalOverlay');
+            const modalClose = document.getElementById('modalClose');
+            const studentCards = document.querySelectorAll('.student-card');
+            
+            // Đóng modal khi nhấp vào nút đóng
+            modalClose.addEventListener('click', () => {
+                modalOverlay.classList.remove('active');
+            });
+            
+            // Đóng modal khi nhấp vào overlay
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) {
+                    modalOverlay.classList.remove('active');
+                }
+            });
+            
+            // Mở modal khi nhấp vào thẻ thạc sĩ
+            studentCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const studentId = card.getAttribute('data-student-id');
+                    openStudentModal(card, studentId);
+                });
+            });
+            
+            // Đóng modal bằng phím ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+                    modalOverlay.classList.remove('active');
+                }
+            });
+        }
+        
+        function openStudentModal(card, studentId) {
+            const modalOverlay = document.getElementById('modalOverlay');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalSubtitle = document.getElementById('modalSubtitle');
+            const modalBadge = document.getElementById('modalBadge');
+            const modalDetails = document.getElementById('modalDetails');
+            
+            // Lấy dữ liệu từ thẻ
+            const imageSrc = card.querySelector('.student-image').src;
+            const name = card.querySelector('h3').textContent;
+            const nienkhoa = card.querySelector('.student-nienkhoa').textContent;
+            const badge = card.querySelector('.achievement-badge').textContent;
+            const details = card.querySelector('.student-details').innerHTML;
+            
+            // Đặt nội dung cho modal
+            modalImage.src = imageSrc;
+            modalTitle.textContent = name;
+            modalSubtitle.textContent = nienkhoa;
+            modalBadge.textContent = badge;
+            modalDetails.innerHTML = details;
+            
+            // Hiển thị modal
+            modalOverlay.classList.add('active');
+        }
+
         // ===== KHỞI TẠO TRANG =====
         document.addEventListener('DOMContentLoaded', function() {
             createParticles();
             createFloatingElements();
+            setupModal();
             
             console.log("=== TRANG THẠC SĨ - TIẾN SĨ ===");
             console.log("Hiển thị danh sách các thạc sĩ và tiến sĩ");
