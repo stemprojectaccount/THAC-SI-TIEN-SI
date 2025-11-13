@@ -463,6 +463,7 @@
             width: 100%;
             text-align: center;
             margin-top: 30px;
+            padding-top: 40px;
         }
         
         .back-to-board-button {
@@ -720,7 +721,8 @@
                             <strong>Hiện nay:</strong> ThS. chuyên ngành tiếng anh  đại học Liverpool <br>
                         </div>
                     </div>
-                    
+                </div>
+                
                 <!-- Back to Honor Board Button -->
                 <div class="back-to-board-section">
                     <a href="https://stemprojectaccount.github.io/BANG-VINH-DANH/" class="back-to-board-button">
