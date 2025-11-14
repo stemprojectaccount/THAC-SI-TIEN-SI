@@ -921,14 +921,14 @@
                     <!-- Thạc sĩ 3 -->
                     <div class="student-card" data-student-id="3">
                         <i class="fas fa-user-graduate student-icon"></i>
-                        <img src="https://i.postimg.cc/7Lm5zG33/z7220311973571-93a74145af47d69dc8cc3fb078dcb592.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
+                        <img src="https://i.postimg.cc/P5Zs1dyT/z7222895676685-3e353abfd1a20f87265e6d971d70c3e4.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
                         <h3>ThS. Nguyễn Lục Minh Anh </h3>
                         <div class="student-nienkhoa">Niên khoá 2015-2016</div>
-                        <div class="achievement-badge">ThS. chuyên ngành Tiếng Anh  Đại Học Liverpool </div>
+                        <div class="achievement-badge">ThS. chuyên ngành Tiếng Anh  Đại Học HUDDERSFIELD ở thành phố Liverpool nước Anh  </div>
                         <div class="student-details">
                              <strong>Thành tích:</strong> Nhiều năm đạt học sinh giỏi , giải ba cấp  huyện môn Tiếng Anh , <br>
-                             <strong>Học vấn:</strong> Tốt nghiệp ThS chuyền ngành sư phạm Tiếng Anh của trường  Đại Học Liverpool .<br>
-                            <strong>Hiện nay:</strong> ThS. chuyên ngành sư phạm  Tiếng Anh của trường  Đại Học Liverpool <br>
+                             <strong>Học vấn:</strong> Tốt nghiệp ThS chuyền ngành sư phạm Tiếng Anh của trường  Đại Học HUDDERSFIELD ở thành phố Liverpool nước Anh .<br>
+                            <strong>Hiện nay:</strong> ThS. chuyên ngành sư phạm  Tiếng Anh của trường  Đại Học HUDDERSFIELD ở thành phố Liverpool nước Anh <br>
                         </div>
                     </div>
                 </div>
