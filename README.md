@@ -924,7 +924,7 @@
                         <img src="https://i.postimg.cc/P5Zs1dyT/z7222895676685-3e353abfd1a20f87265e6d971d70c3e4.jpg" alt="Thạc sĩ Trần Văn Nam" class="student-image">
                         <h3>ThS. Nguyễn Lục Minh Anh </h3>
                         <div class="student-nienkhoa">Niên khoá 2015-2016</div>
-                        <div class="achievement-badge">ThS. chuyên ngành Tiếng Anh  Đại Học HUDDERSFIELD ở thành phố Liverpool - nước Anh  </div>
+                        <div class="achievement-badge">ThS. chuyên ngành Tiếng Anh  Đại Học HUDDERSFIELD ở thành phố HUDDERSFIELD -  nước Anh  </div>
                         <div class="student-details">
                              <strong>Thành tích:</strong> Nhiều năm đạt học sinh giỏi , giải ba cấp  huyện môn Tiếng Anh , <br>
                              <strong>Học vấn:</strong> Tốt nghiệp ThS chuyền ngành sư phạm Tiếng Anh của trường  Đại Học HUDDERSFIELD ở thành phố Liverpool - nước Anh .<br>
